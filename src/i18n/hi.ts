@@ -6,9 +6,9 @@ export const hi: TranslationDictionary = {
   home: {
     heroTitle: 'बताएं क्या हुआ।',
     heroSubtitle: 'हम आपको समझने में मदद करेंगे कि आगे क्या करना है।',
-    tellStoryButton: '🎙 अपनी समस्या बताएं',
-    scanDocumentButton: '📷 दस्तावेज़ स्कैन करें',
-    uploadDocumentButton: '📄 दस्तावेज़ अपलोड करें',
+    tellStoryButton: 'अपनी समस्या बताएं',
+    scanDocumentButton: 'दस्तावेज़ स्कैन करें',
+    uploadDocumentButton: 'दस्तावेज़ अपलोड करें',
     myCasesHeader: 'मेरे मामले',
     noCasesMessage: 'अभी कोई सक्रिय मामला नहीं है। ऐक्शन प्लान शुरू करने के लिए अपनी स्थिति बताएं।',
   },

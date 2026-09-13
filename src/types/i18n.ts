@@ -1,4 +1,28 @@
-export type LanguageCode = 'en' | 'hi' | 'hinglish';
+export type LanguageCode = 'en' | 'hi' | 'hinglish' | 'mr' | 'bn' | 'ta' | 'te';
+
+export interface CaseLanguage {
+  code: LanguageCode;
+  name: string;
+  nativeName: string;
+  source: 'detected' | 'user_selected';
+}
+
+export interface LanguageOption {
+  code: LanguageCode;
+  name: string;
+  nativeName: string;
+  flag?: string;
+}
+
+export const SUPPORTED_LANGUAGES: LanguageOption[] = [
+  { code: 'en', name: 'English', nativeName: 'English' },
+  { code: 'hi', name: 'Hindi', nativeName: 'हिन्दी' },
+  { code: 'mr', name: 'Marathi', nativeName: 'मराठी' },
+  { code: 'hinglish', name: 'Hinglish', nativeName: 'Hinglish' },
+  { code: 'bn', name: 'Bengali', nativeName: 'বাংলা' },
+  { code: 'ta', name: 'Tamil', nativeName: 'தமிழ்' },
+  { code: 'te', name: 'Telugu', nativeName: 'తెలుగు' },
+];
 
 export interface TranslationDictionary {
   appName: string;

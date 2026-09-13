@@ -14,11 +14,14 @@ export interface EvidenceRequirement {
 export interface ActionStep {
   id: string;
   stepNumber: number;
+  order?: number;
   title: string;
   description: string;
   priority: StepPriority;
   status: StepStatus;
   reason: string;
+  why?: string;
+  requiredDocuments?: string[];
   evidenceRequirements: EvidenceRequirement[];
   resourceLinks?: ResourceLink[];
   draftTemplate?: {
@@ -26,6 +29,8 @@ export interface ActionStep {
     content: string;
   };
   officialProcessUrl?: string;
+  sourceIds?: string[];
+  completionCriteria?: string;
 }
 
 export interface ActionPlan {

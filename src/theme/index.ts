@@ -1,9 +1,11 @@
-import { colors } from './colors';
+import { lightColors, darkColors, ColorPalette } from './colors';
 import { typography } from './typography';
 import { spacing, radius, shadow, animations } from './spacing';
 
 export const theme = {
-  colors,
+  colors: lightColors,
+  lightColors,
+  darkColors,
   typography,
   spacing,
   radius,
@@ -11,5 +13,5 @@ export const theme = {
   animations,
 } as const;
 
-export type Theme = typeof theme;
-export { colors, typography, spacing, radius, shadow, animations };
+export { lightColors, darkColors, typography, spacing, radius, shadow, animations };
+export type { ColorPalette };

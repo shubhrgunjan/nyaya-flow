@@ -29,14 +29,35 @@ export interface OfficialForm {
   downloadUrl?: string;
 }
 
+export interface LegalSourceCitation {
+  actName: string;
+  sectionNumber: string;
+  sectionTitle: string;
+  excerpt: string;
+  officialSourceUrl: string;
+}
+
 export interface LegalCaseAnalysis {
+  id: string;
+  language: string;
+  normalizedProblem: string;
   category: LegalCategory;
   subcategory: string;
   jurisdiction: Jurisdiction;
+  facts: Record<string, any>;
+  people: string[];
+  organizations: string[];
+  dates: string[];
+  amounts: string[];
   summary: string;
   urgency: UrgencyLevel;
+  riskFlags: string[];
+  uncertainties: string[];
   confidenceScore: number;
   keyIssuesIdentified: string[];
+  evidenceNeeded: string[];
+  possibleRoutes: string[];
+  recommendedRoute: string;
   suggestedActionSteps: {
     title: string;
     description: string;
@@ -48,5 +69,8 @@ export interface LegalCaseAnalysis {
   officialResources: ResourceLink[];
   officialForms: OfficialForm[];
   recommendedVideos: ResourceLink[];
+  legalSources: LegalSourceCitation[];
   escalationOptions: string[];
+  disclaimer: string;
 }
+

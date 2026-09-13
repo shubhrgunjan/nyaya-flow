@@ -6,9 +6,9 @@ export const en: TranslationDictionary = {
   home: {
     heroTitle: 'Tell us what happened.',
     heroSubtitle: "We'll help you figure out what to do next.",
-    tellStoryButton: '🎙 Tell your story',
-    scanDocumentButton: '📷 Scan document',
-    uploadDocumentButton: '📄 Upload document',
+    tellStoryButton: 'Tell your story',
+    scanDocumentButton: 'Scan document',
+    uploadDocumentButton: 'Upload document',
     myCasesHeader: 'MY CASES',
     noCasesMessage: 'No active legal cases yet. Tell us your situation to start an action plan.',
   },

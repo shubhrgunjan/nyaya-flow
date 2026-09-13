@@ -1,25 +1,57 @@
 {
   "expo": {
-    "name": "nyaya-flow",
+    "name": "NYAYA FLOW",
     "slug": "nyaya-flow",
+    "scheme": "nyayaflow",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0D0F12"
+    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Nyaya Flow needs microphone access to convert your spoken legal problem into text.",
+        "NSCameraUsageDescription": "Nyaya Flow needs camera access to scan legal documents and evidence."
+      }
     },
     "android": {
+      "package": "com.nyayaflow.app",
+      "versionCode": 1,
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.CAMERA"
+      ],
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#0D0F12",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
-      },
-      "predictiveBackGestureEnabled": false
+      }
     },
     "web": {
+      "bundler": "metro",
+      "output": "single",
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-splash-screen",
+      "expo-router",
+      "expo-font",
+      "expo-image-picker",
+      "expo-document-picker",
+      "expo-audio"
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "a0236c4f-312d-4571-80a9-2d4d48d9b439"
+      }
     }
   }
 }
