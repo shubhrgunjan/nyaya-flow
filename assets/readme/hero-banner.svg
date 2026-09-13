@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D0F12" />
+      <stop offset="50%" stop-color="#141820" />
+      <stop offset="100%" stop-color="#0B0D10" />
+    </linearGradient>
+    <linearGradient id="accent-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#6366F1" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0.8" />
+    </linearGradient>
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E2330" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#121620" stop-opacity="0.9" />
+    </linearGradient>
+    <filter id="drop-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="480" fill="url(#bg-gradient)" rx="16" />
+  <rect width="1200" height="480" fill="none" stroke="#1E293B" stroke-width="2" rx="16" />
+
+  <!-- Subtle grid lines -->
+  <g opacity="0.07" stroke="#94A3B8" stroke-width="1">
+    <line x1="0" y1="80" x2="1200" y2="80" />
+    <line x1="0" y1="160" x2="1200" y2="160" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="320" x2="1200" y2="320" />
+    <line x1="0" y1="400" x2="1200" y2="400" />
+    <line x1="200" y1="0" x2="200" y2="480" />
+    <line x1="400" y1="0" x2="400" y2="480" />
+    <line x1="600" y1="0" x2="600" y2="480" />
+    <line x1="800" y1="0" x2="800" y2="480" />
+    <line x1="1000" y1="0" x2="1000" y2="480" />
+  </g>
+
+  <!-- Top Accent Bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent-glow)" />
+
+  <!-- Header Branding -->
+  <g transform="translate(60, 48)">
+    <!-- Pillar Icon Motif -->
+    <rect x="0" y="0" width="36" height="36" rx="8" fill="#1E293B" stroke="#3B82F6" stroke-width="1.5" />
+    <path d="M10 26V14M18 26V14M26 26V14M8 12H28M8 28H28" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" />
+    <text x="50" y="24" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="22" letter-spacing="1.5">NYAYA FLOW</text>
+    <rect x="210" y="6" width="140" height="24" rx="12" fill="#1E293B" stroke="#334155" stroke-width="1" />
+    <text x="280" y="22" fill="#38BDF8" font-family="monospace" font-weight="700" font-size="11" text-anchor="middle" letter-spacing="1">LEGAL TECH 2026</text>
+  </g>
+
+  <text x="1140" y="66" fill="#64748B" font-family="monospace" font-weight="600" font-size="12" text-anchor="end">LIVE DEMO · GITHUB PAGES READY</text>
+
+  <!-- Flow Transformation Nodes -->
+  <!-- Node 1: Real-World Problem -->
+  <g transform="translate(60, 130)" filter="url(#drop-shadow)">
+    <rect width="210" height="260" rx="12" fill="url(#card-grad)" stroke="#334155" stroke-width="1.5" />
+    <rect x="16" y="16" width="40" height="24" rx="4" fill="#EF4444" fill-opacity="0.15" stroke="#EF4444" stroke-width="1" />
+    <text x="36" y="32" fill="#F87171" font-family="monospace" font-weight="700" font-size="11" text-anchor="middle">INPUT</text>
+
+    <text x="16" y="70" fill="#F8FAFC" font-family="-apple-system, sans-serif" font-weight="700" font-size="15">Real-World Problem</text>
+    <text x="16" y="92" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="12" leading="18">
+      <tspan x="16" dy="0">"My landlord withheld</tspan>
+      <tspan x="16" dy="18">my ₹75,000 security</tspan>
+      <tspan x="16" dy="18">deposit without reason."</tspan>
+    </text>
+
+    <g transform="translate(16, 175)">
+      <rect width="178" height="65" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1" />
+      <text x="10" y="22" fill="#64748B" font-family="monospace" font-size="10">INTAKE MODES:</text>
+      <text x="10" y="42" fill="#38BDF8" font-family="monospace" font-weight="600" font-size="11">Text · Voice · Document</text>
+    </g>
+  </g>
+
+  <!-- Arrow 1 -->
+  <g transform="translate(285, 250)">
+    <path d="M 0 0 L 30 0" stroke="#3B82F6" stroke-width="2" stroke-dasharray="4 2" />
+    <polygon points="30,-4 38,0 30,4" fill="#3B82F6" />
+  </g>
+
+  <!-- Node 2: AI Case Understanding -->
+  <g transform="translate(340, 130)" filter="url(#drop-shadow)">
+    <rect width="230" height="260" rx="12" fill="url(#card-grad)" stroke="#3B82F6" stroke-width="1.5" />
+    <rect x="16" y="16" width="64" height="24" rx="4" fill="#3B82F6" fill-opacity="0.15" stroke="#3B82F6" stroke-width="1" />
+    <text x="48" y="32" fill="#60A5FA" font-family="monospace" font-weight="700" font-size="11" text-anchor="middle">EXTRACT</text>
+
+    <text x="16" y="70" fill="#F8FAFC" font-family="-apple-system, sans-serif" font-weight="700" font-size="15">Case Understanding</text>
+    
+    <g transform="translate(16, 88)">
+      <rect width="198" height="30" rx="6" fill="#0F172A" stroke="#1E293B" />
+      <text x="10" y="20" fill="#94A3B8" font-family="monospace" font-size="11">Claim: <tspan fill="#F8FAFC" font-weight="700">₹75,000 Deposit</tspan></text>
+    </g>
+    <g transform="translate(16, 126)">
+      <rect width="198" height="30" rx="6" fill="#0F172A" stroke="#1E293B" />
+      <text x="10" y="20" fill="#94A3B8" font-family="monospace" font-size="11">Notice Term: <tspan fill="#F8FAFC" font-weight="700">30 Days</tspan></text>
+    </g>
+    <g transform="translate(16, 164)">
+      <rect width="198" height="30" rx="6" fill="#0F172A" stroke="#1E293B" />
+      <text x="10" y="20" fill="#94A3B8" font-family="monospace" font-size="11">Evidence: <tspan fill="#F8FAFC" font-weight="700">Photos & WhatsApp</tspan></text>
+    </g>
+
+    <text x="16" y="225" fill="#64748B" font-family="monospace" font-size="10">STRUCTURED CASE STATE</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <g transform="translate(585, 250)">
+    <path d="M 0 0 L 30 0" stroke="#6366F1" stroke-width="2" stroke-dasharray="4 2" />
+    <polygon points="30,-4 38,0 30,4" fill="#6366F1" />
+  </g>
+
+  <!-- Node 3: Statutory Routing & Retrieval -->
+  <g transform="translate(630, 130)" filter="url(#drop-shadow)">
+    <rect width="240" height="260" rx="12" fill="url(#card-grad)" stroke="#6366F1" stroke-width="1.5" />
+    <rect x="16" y="16" width="60" height="24" rx="4" fill="#6366F1" fill-opacity="0.15" stroke="#6366F1" stroke-width="1" />
+    <text x="46" y="32" fill="#818CF8" font-family="monospace" font-weight="700" font-size="11" text-anchor="middle">ROUTER</text>
+
+    <text x="16" y="70" fill="#F8FAFC" font-family="-apple-system, sans-serif" font-weight="700" font-size="15">Jurisdiction & Sources</text>
+
+    <g transform="translate(16, 88)">
+      <rect width="208" height="42" rx="6" fill="#0F172A" stroke="#334155" />
+      <text x="10" y="18" fill="#818CF8" font-family="monospace" font-weight="700" font-size="10">JURISDICTION:</text>
+      <text x="10" y="34" fill="#F8FAFC" font-family="-apple-system, sans-serif" font-size="12">State Rent Authority / Tribunal</text>
+    </g>
+
+    <g transform="translate(16, 138)">
+      <rect width="208" height="42" rx="6" fill="#0F172A" stroke="#334155" />
+      <text x="10" y="18" fill="#10B981" font-family="monospace" font-weight="700" font-size="10">STATUTORY SOURCE:</text>
+      <text x="10" y="34" fill="#F8FAFC" font-family="-apple-system, sans-serif" font-size="12">Transfer of Property Act §108</text>
+    </g>
+
+    <text x="16" y="225" fill="#64748B" font-family="monospace" font-size="10">SOURCE-GROUNDED RETRIEVAL</text>
+  </g>
+
+  <!-- Arrow 3 -->
+  <g transform="translate(885, 250)">
+    <path d="M 0 0 L 30 0" stroke="#10B981" stroke-width="2" stroke-dasharray="4 2" />
+    <polygon points="30,-4 38,0 30,4" fill="#10B981" />
+  </g>
+
+  <!-- Node 4: Dynamic Action Roadmap -->
+  <g transform="translate(930, 130)" filter="url(#drop-shadow)">
+    <rect width="210" height="260" rx="12" fill="url(#card-grad)" stroke="#10B981" stroke-width="1.5" />
+    <rect x="16" y="16" width="68" height="24" rx="4" fill="#10B981" fill-opacity="0.15" stroke="#10B981" stroke-width="1" />
+    <text x="50" y="32" fill="#34D399" font-family="monospace" font-weight="700" font-size="11" text-anchor="middle">ROADMAP</text>
+
+    <text x="16" y="70" fill="#F8FAFC" font-family="-apple-system, sans-serif" font-weight="700" font-size="15">Action Roadmap</text>
+
+    <g transform="translate(16, 88)">
+      <circle cx="10" cy="10" r="10" fill="#10B981" />
+      <text x="10" y="14" fill="#0D0F12" font-family="sans-serif" font-weight="800" font-size="10" text-anchor="middle">1</text>
+      <text x="28" y="14" fill="#F8FAFC" font-family="-apple-system, sans-serif" font-weight="600" font-size="12">Review Agreement</text>
+    </g>
+    <g transform="translate(16, 120)">
+      <circle cx="10" cy="10" r="10" fill="#3B82F6" />
+      <text x="10" y="14" fill="#FFFFFF" font-family="sans-serif" font-weight="800" font-size="10" text-anchor="middle">2</text>
+      <text x="28" y="14" fill="#F8FAFC" font-family="-apple-system, sans-serif" font-weight="600" font-size="12">Document Condition</text>
+    </g>
+    <g transform="translate(16, 152)">
+      <circle cx="10" cy="10" r="10" fill="#6366F1" />
+      <text x="10" y="14" fill="#FFFFFF" font-family="sans-serif" font-weight="800" font-size="10" text-anchor="middle">3</text>
+      <text x="28" y="14" fill="#F8FAFC" font-family="-apple-system, sans-serif" font-weight="600" font-size="12">Send Formal Notice</text>
+    </g>
+    <g transform="translate(16, 184)">
+      <circle cx="10" cy="10" r="10" fill="#64748B" />
+      <text x="10" y="14" fill="#FFFFFF" font-family="sans-serif" font-weight="800" font-size="10" text-anchor="middle">4</text>
+      <text x="28" y="14" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="12">Escalate Dispute</text>
+    </g>
+
+    <text x="16" y="235" fill="#10B981" font-family="monospace" font-weight="700" font-size="10">PROCEDURAL PROGRESS</text>
+  </g>
+
+  <!-- Bottom Tagline -->
+  <text x="600" y="440" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="13" font-weight="500" text-anchor="middle">
+    Know your rights. Know your next step. <tspan fill="#38BDF8">· Multilingual (Hindi, Marathi, English) · Dual Voice Engine (Gemini &amp; Gnani.ai)</tspan>
+  </text>
+</svg>
