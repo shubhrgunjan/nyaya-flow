@@ -4,7 +4,7 @@
 
 **AI Legal Navigation System for India**
 
-> Nyaya Flow helps people turn a real-world legal or government problem into a structured, source-backed path of action — in the language they understand.
+> Nyaya Flow helps people turn a real-world legal or government problem into a structured, source-backed path of action, in the language they understand.
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-GitHub_Pages-00C853?style=for-the-badge&logo=github&logoColor=white)](https://shubhrgunjan.github.io/nyaya-flow/)
 [![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/shubhrgunjan/nyaya-flow)
